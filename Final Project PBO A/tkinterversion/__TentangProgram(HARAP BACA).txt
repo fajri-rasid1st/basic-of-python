@@ -1,0 +1,76 @@
+Nama : Muhammad Fajri Rasid
+NIM  : H071191051
+
+TO DO List versi Tkinter
+
+**Fitur project**
+- Sistem untuk Mencatat Jadwal Kegiatan yang akan dilakukan
+- Daftar kegiatan dimiliki oleh satu User
+- Setiap kegiatan memiliki deskripsi
+- Setiap kegiatan memiliki jadwal mulai dan jadwal selesai
+- Setiap Kegiatan memiliki status selesai, sedang dikerjakan, belum dikerjakan
+- Setiap Kegiatan memiliki prioritas
+- User hanya dapat melihat daftar kegiatan yang dibuatnya
+- User dapat menampilkan daftar kegitan berdasarkan jadwal, prioritas, atau status
+- User dapat menghapus dan menambah kegiatan
+**Fitur yang ditambahkan**
+- User harus mendaftar terlebih dahulu agar bisa mengakses To-Do-List harian
+- User dapat melihat biodatanya
+
+
+**Information**
+- Code program/syntax 100% bukan hasil copas dari Teman
+- Class mainnya bernama "Test.py"
+- program dapat di run melalui:
+	1. CMD
+	-> Buka folder project "tkinterversion" dengam path "....\tkinterversion" melalui CMD
+	-> ketikkan "python Test.py
+	2. Visual Studio Code
+	-> Buka folder project "tkinterversion" melalui VSC
+	-> jalankan/run program melalui file Test.py
+	3. dll.
+- Jika program tidak dapat di run karena masalah path dari kegiatan.txt, atur dahulu pathnya.
+
+
+**Spesifikasi project**
+> Project memiliki 9 class:
+	1. "TodoList.py"       = SuperClass dari :
+		2. "AddList"
+		3. "DeleteList"
+		4. "DescriptionList"
+		5. "ShowList.py"
+	6. "Biodata.py"        = class yang berisikan biodata yang harus di isi saat registrasi
+	7. "Registration.py"   = class untuk mengatur proses registrasi user sebelum dapat mengakses to-do list
+	8. "InitialDisplay.py" = class yang mengatur tampilan awal menu pilihan user serta aksi-aksi yang akan dipilih oleh user
+	9. "Test.py"           = class untuk run program
+> Project memiliki sebuah database yaitu "kegiatan.txt" untuk menampung kegiatan dari user 
+  dengan format perbaris berupa namakegiatan;jadwal;prioritas;status;deskripsi
+> Project memiliki sebuah gambar berformat .png yang akan dimasukkan kedalam program
+
+
+**Alur Kerja Project**
++ Untuk menjalankan simulasi project, bisa dilihat pada **Information** di atas
++ Program bisa di hentikan dengan menekan tombol Esc pada keyboard
+
+
+**Input & Output**
+- Contoh input saat registrasi --> nama           : muhammad fajri rasid
+                                   nama panggilan : fajri
+                                   Tanggal lahir  : 26/02/2001 
+                                   NIM            : H071191051
+	keterangan : (jika ada inputan salah maka program akan melakukan registrasi dari awal)
+		     (format tanggal lahir yang benar dd/MM/yyyy, contoh 01/02/1998 atau 1/2/1998)
+		     (agar program bisa mengecek fakultas user, digit pertama NIM harus sesuai dengan facultyDict di class Registration.py)
+
+- Contoh input saat menambah kegiatan --> nama kegiatan : bermain tic tac toe
+                                          jadwal        : 9.00 - 11.00
+                                          prioritas     : penting
+                                          status        : selesai
+                                          deskripsi     : jangan lupa mengajak teman-teman lain
+
+- Untuk lebih jelasnya silahkan langsung jalankan programnya
+
+
+**Konsep OOP**
+> beberapa konsep OOP yang diterapkan adalah class dan object, attribute,behaviour,construct(__init__), enkapsulasi, inheritance, 
+  abstract class & abstract method, serta polymorphisme.

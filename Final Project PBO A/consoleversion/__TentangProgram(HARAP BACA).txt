@@ -1,0 +1,76 @@
+Nama : Muhammad Fajri Rasid
+NIM  : H071191051
+
+TO DO List versi console
+
+**Fitur project**
+- Sistem untuk Mencatat Jadwal Kegiatan yang akan dilakukan
+- Daftar kegiatan dimiliki oleh satu User
+- Setiap kegiatan memiliki deskripsi
+- Setiap kegiatan memiliki jadwal mulai dan jadwal selesai
+- Setiap Kegiatan memiliki status selesai, sedang dikerjakan, belum dikerjakan
+- Setiap Kegiatan memiliki prioritas
+- User hanya dapat melihat daftar kegiatan yang dibuatnya
+- User dapat menampilkan daftar kegitan berdasarkan jadwal, prioritas, atau status
+- User dapat menghapus dan menambah kegiatan
+**Fitur yang ditambahkan**
+- User harus mendaftar terlebih dahulu agar bisa mengakses To-Do-List harian
+- User dapat mengedit kegiatan
+- User dapat melihat biodatanya
+
+
+**Information**
+- Code program/syntax 100% bukan hasil copas dari Teman
+  (bisa dibuktikan dengan melihat code tugas mid sebelumnya terdapat beberapa kesamaan struktur)
+- Class mainnya bernama "Test.py"
+- program dapat di run melalui:
+	1. CMD
+	-> Buka folder project "consoleversion" dengam path "....\consoleversion" melalui CMD
+	-> ketikkan "python Test.py
+	2. Visual Studio Code
+	-> Buka folder project "consoleversion" melalui VSC
+	-> jalankan/run program melalui file Test.py
+	3. dll.
+- Jika program tidak dapat di run karena masalah path dari kegiatan.txt, atur dahulu pathnya.
+
+
+**Spesifikasi project**
+> Project memiliki 6 class:
+	1. "TodoList.py"       = class abstract
+	2. "TodoListHandle.py" = subclass dari class abstract TodoList.py, berfungsi menghandle semua aksi yang dilakukan pada file kegiatan.txt
+	3. "Biodata.py"        = class yang berisikan biodata yang harus di isi saat registrasi
+	4. "Registration.py"   = class untuk mengatur proses registrasi user sebelum dapat mengakses to-do list
+	5. "InitialDisplay.py" = class yang mengatur tampilan awal menu pilihan user serta aksi-aksi yang akan dipilih oleh user
+	6. "Test.py"           = class untuk run program
+> Project memiliki sebuah database yaitu "kegiatan.txt" untuk menampung kegiatan dari user 
+  dengan format perbaris berupa namakegiatan;jadwal;prioritas;status;deskripsi
+
+
+**Alur Kerja Project**
++ Untuk menjalankan simulasi project, bisa dilihat pada **Information** di atas
++ Setelah dijalankan maka akan muncul tampilan awal dan user akan diminta untuk menekan angka 1 untuk melakukan registrasi
++ User harus menginput nama lengkap, nama panggilan, tanggal lahir dengan format dd/MM/yyyy, serta NIM (lihat Registration.py)
++ Setelah pendaftaran berhasil akan muncul tampilan Menu To-Do-List di mana user menginput angka sesuai pilihan pada menu
++ Pilihan pada menu antara lain melihat kegiatan, menambahkan kegiatan, hapus kegiatan, edit kegiatan, lihat deskripsi, dan lihat biodata.
+
+**Input & Output**
+- Contoh input saat registrasi --> nama           : muhammad fajri rasid
+                                   nama panggilan : fajri
+                                   Tanggal lahir  : 26/02/2001 
+                                   NIM            : H071191051
+	keterangan : (jika ada inputan salah maka program akan melakukan registrasi dari awal)
+		     (format tanggal lahir yang benar dd/MM/yyyy, contoh 01/02/1998 atau 1/2/1998)
+		     (agar program bisa mengecek fakultas user, digit pertama NIM harus sesuai dengan facultyDict di class Registration.py)
+
+- Contoh input saat menambah kegiatan --> nama kegiatan : bermain tic tac toe
+                                          jadwal        : 9.00 - 11.00
+                                          prioritas     : 1 (terdapat pilihan int)
+                                          status        : 3 (terdapat pilihan int)
+                                          deskripsi     : jangan lupa mengajak teman-teman lain
+
+- Untuk lebih jelasnya silahkan langsung jalankan programnya
+
+
+**Konsep OOP**
+> beberapa konsep OOP yang diterapkan adalah class dan object, attribute,behaviour,construct(__init__), enkapsulasi, inheritance, 
+  abstract class & abstract method, serta polymorphisme.
