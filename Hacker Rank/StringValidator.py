@@ -1,9 +1,9 @@
 # String validator
 def check(totalV):
     if totalV != 0:
-        print(True)
+        print(totalV != 0)
     else:
-        print(False)
+        print(totalV == 0)
 
 
 if __name__ == "__main__":
