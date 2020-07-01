@@ -72,5 +72,5 @@ TO DO List versi Tkinter
 
 
 **Konsep OOP**
-> beberapa konsep OOP yang diterapkan adalah class dan object, attribute,behaviour,construct(__init__), enkapsulasi, inheritance, 
+> beberapa konsep OOP yang diterapkan adalah class dan object, attribute, behaviour, construct(__init__), enkapsulasi, inheritance, 
   abstract class & abstract method, serta polymorphisme.
