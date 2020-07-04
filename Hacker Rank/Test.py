@@ -1,6 +1,2 @@
-x = map(lambda x: str(x).lower(), "FAJRI")
-
-y = [i for i in list(x)]
-
-for i in y:
-    print(ord(i))
+x = map(lambda x: str(x).lower(), input())
+y = [ord(i) for i in list(x) if ord(i) % 2 == 0]
