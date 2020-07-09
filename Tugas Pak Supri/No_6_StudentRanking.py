@@ -11,7 +11,7 @@ for i in range(0, n):
 print(15 * "-", "Hasil", 15 * "-")
 
 a = 0
-for i in reversed(sorted(ranking, key=lambda index: index[1])):
+for i in sorted(ranking, key=lambda index: index[1], reverse=True):
     if a == 3:
         break
     print(f"{a+1}. {i[0]} dengan nilai {i[1]}")
