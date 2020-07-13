@@ -1,3 +1,5 @@
+# input() and eval()
+
 polinom = lambda sources: eval(sources)
 
 x, y = map(int, input().split())
