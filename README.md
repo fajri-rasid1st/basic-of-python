@@ -1,4 +1,4 @@
-# Basic-of-Python
+# basic-of-python
 
 ![Screenshot](https://github.com/fajri-rasid1st/Basic-of-Python/blob/master/src/python.png)
 
